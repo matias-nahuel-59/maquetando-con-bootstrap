@@ -1,0 +1,168 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Buenard&family=Cormorant+Garamond:wght@300&family=Raleway:wght@100&display=swap');
+</style>
+
+* {
+  width: 0;
+  height: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Cormorant Garamond', serif;
+}
+/* INDEX.HTML */
+
+/* header */
+
+header {
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header img{
+    width: 5%;
+    margin: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: end;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(253, 127, 24);
+    padding: 6px;
+    border-radius: 3px;
+}
+
+header nav ul li a:hover {
+    background-color: #fff;
+    color: rgb(253, 127, 24);
+}
+
+
+/* MAIN DEL INDEX.HTML*/
+
+.hijo-3 {
+    grid-column: span 2;
+}
+
+
+.main img {
+    width: 65%;
+}
+
+.main {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.guerreros-z, .casa-kame{
+    border-radius: 10px;
+}
+
+/* MEDIA QUERIE GRID-PADRE */
+
+@media screen and (max-width:500px){
+    .hijo-1 h1 {
+        font-size: 18px
+    }
+    .hijo-1 {
+        grid-column: span 2;
+    }
+    header nav ul {
+        justify-content: center;
+    }
+}
+
+/* MAIN DE PAGES CONTACTO */
+
+
+/* footer */
+
+footer {
+    background-image: linear-gradient(to bottom, red , rgb(253, 127, 24));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    
+}
+
+footer ul li {
+    list-style: none;
+    margin: 10px;
+    text-align: center;
+
+}
+
+footer  ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+    border-radius: 3px;
+}
+footer  ul li a:hover {
+    font-size: small;
+}
+
+.footer img{
+    margin: 10px;
+    width: 8%;
+
+}
+
+.redes {
+    margin: 10px;
+    width: 20%;
+}
+
+
+
+/* MEDIA QUERIE DEL HEADER*/
+
+@media screen and (max-width: 819px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 731px) {
+    header nav {
+        height: auto;
+    }
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/* MEDIA QUERIE DEL FOOTER*/
+
+
+@media screen and (max-width: 390) {
+    .footer ul li{
+        height: auto;
+        text-align: center;
+       
+        
+    }
+    .footer ul {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+}
