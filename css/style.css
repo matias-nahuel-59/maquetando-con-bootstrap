@@ -15,6 +15,9 @@ body{
 
 /* header */
 
+.container-fluid {
+}
+
 .dragon img{
     width: 12%;
     margin: 10px;
@@ -25,18 +28,9 @@ body{
     text-align: end;
 }
 
-.nav-menu nav ul li {
-    display: inline-block;
-    margin: 20px;
-}
 
-.nav-menu nav ul li a{
-    text-decoration: none;
-    color: white;
-    background-color: rgb(253, 127, 24);
-    padding: 6px;
-    border-radius: 3px;
-}
+
+
 
 .nav-menu nav ul li a:hover {
     background-color: #fff;
@@ -49,12 +43,12 @@ body{
 /* MAIN DEL INDEX.HTML*/
 
 .hijo-3 {
-    grid-column: span 2;
+    margin-top: 120px;
 }
-
 
 .main img {
     width: 65%;
+    margin-bottom: 20px;
 }
 
 .main {
@@ -63,30 +57,28 @@ body{
 }
 
 .guerreros-z, .casa-kame{
-    border-radius: 10px;
+    border-radius: 9px;
 }
 
-/* MEDIA QUERIE GRID-PADRE */
 
-@media screen and (max-width:500px){
-    .hijo-1 h1 {
-        font-size: 18px
-    }
-    .hijo-1 {
-        grid-column: span 2;
-    }
-    header nav ul {
-        justify-content: center;
-    }
-}
 
 /* MAIN DE PAGES CONTACTO */
 
+.formulario-supremo {
+    padding: 30px;
+    margin: 150px;
+    border-radius: 10px;
+    border: 2px solid #333 ;
+}
+
+.coment {
+    margin-top: 15px;
+}
 
 /* footer */
 
 footer {
-    background-image: linear-gradient(to bottom, red , rgb(253, 127, 24));
+    background-color: #111;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,6 +101,7 @@ footer  ul li a{
 }
 footer  ul li a:hover {
     font-size: small;
+    color: rgb(253, 127, 24);
 }
 
 .footer img{
@@ -126,27 +119,21 @@ footer  ul li a:hover {
 
 /* MEDIA QUERIE DEL HEADER*/
 
-@media screen and (max-width: 819px) {
-    header {
-        flex-direction: column;
-    }
-}
 
-@media screen and (max-width: 731px) {
-    header nav {
-        height: auto;
-    }
-    header nav ul {
-        flex-direction: column;
+
+@media screen and (max-width: 610px){
+    .dragon {
         text-align: center;
     }
+
 }
+
 
 
 /* MEDIA QUERIE DEL FOOTER*/
 
 
-@media screen and (max-width: 390) {
+@media screen and (max-width: 450) {
     .footer ul li{
         height: auto;
         text-align: center;
