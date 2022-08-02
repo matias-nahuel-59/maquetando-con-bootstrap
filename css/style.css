@@ -15,30 +15,22 @@ body{
 
 /* header */
 
-header {
-    background-color: #222;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-header img{
-    width: 5%;
+.dragon img{
+    width: 12%;
     margin: 10px;
 }
 
-header nav ul {
+.nav-menu nav ul {
     list-style: none;
     text-align: end;
 }
 
-header nav ul li {
+.nav-menu nav ul li {
     display: inline-block;
     margin: 20px;
 }
 
-header nav ul li a{
+.nav-menu nav ul li a{
     text-decoration: none;
     color: white;
     background-color: rgb(253, 127, 24);
@@ -46,10 +38,12 @@ header nav ul li a{
     border-radius: 3px;
 }
 
-header nav ul li a:hover {
+.nav-menu nav ul li a:hover {
     background-color: #fff;
     color: rgb(253, 127, 24);
-}
+} 
+
+
 
 
 /* MAIN DEL INDEX.HTML*/
